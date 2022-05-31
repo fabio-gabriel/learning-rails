@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @persona.name %>
+</p>
+
+<p>
+  <strong>Arcana:</strong>
+  <%= @persona.arcana %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @persona.level %>
+</p>
+
+<%= link_to 'Edit', edit_persona_path(@persona) %> |
+<%= link_to 'Back', personas_path %>
