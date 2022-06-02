@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+50.times do
+   Persona.create(name: Faker::Music.band,
+                arcana: Faker::JapaneseMedia::StudioGhibli.character,
+                level: rand(0..99)) 
+end
