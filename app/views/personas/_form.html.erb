@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="field form-group">
+    <%# form.label :name %>
+    <%= form.text_field :name, class:"form-control mb-2", placeholder:"Name" %>
   </div>
 
-  <div class="field">
-    <%= form.label :arcana %>
-    <%= form.text_field :arcana %>
+  <div class="field form-group">
+    <%# form.label :arcana %>
+    <%= form.text_field :arcana, class:"form-control mb-2", placeholder:"Arcana" %>
   </div>
 
-  <div class="field">
-    <%= form.label :level %>
-    <%= form.number_field :level %>
+  <div class="field form-group">
+    <%# form.label :level %>
+    <%= form.number_field :level, class:"form-control", placeholder:"level" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions mt-3">
+    <%= form.submit class:"btn btn-success" %>
   </div>
 <% end %>
